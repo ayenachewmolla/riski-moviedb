@@ -1,16 +1,18 @@
-<p>home works!</p>
-<p>Search Movie</p>
-<input #searchInput />
-<button (click)="search(searchInput.value)">SEARCH</button>
+<section class="main-page">
+    <p>home works!</p>
+    <p>Search Movie</p>
+    <input #searchInput />
+    <button (click)="search(searchInput.value)">SEARCH</button>
 
-<section *ngIf="result">
-    <div *ngFor="let movie of result.results" class="movie">
-        <a routerLink="/movie/{{movie.id}}">
-            {{movie.title}}
-        </a>
-        <p></p>
+    <section *ngIf="result">
+        <div *ngFor="let movie of result.results" class="movie">
+            <a routerLink="/movie/{{movie.id}}">
+                {{movie.title}}
+            </a>
+            <p></p>
+        </div>
+    </section>
+    <div *ngIf="! result.results">
+        fgdb
     </div>
 </section>
-<div *ngIf="! result.results">
-fgdb
-</div>

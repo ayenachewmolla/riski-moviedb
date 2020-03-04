@@ -19,10 +19,7 @@ export class MovieDetailComponent implements OnInit {
   ngOnInit():void {
     this._http.getMovie(this.movieId).subscribe((data => {
       this.movie = data;
-      console.log(this.movie);
-      
     }))
   }
   
-
 }
