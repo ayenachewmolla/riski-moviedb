@@ -1,3 +1,32 @@
 *{
-    width: 500px;
+    width: 100pw;
 }
+
+.movie {
+    display              : grid;
+grid-template-columns: repeat(3, 1fr);
+width                : 95%;
+margin               : auto;
+grid-gap             : 5px;
+
+img {
+    width : 90%;
+    height: 50pw;
+    margin: auto;
+}
+}
+h3 {
+    text-align: center;
+    
+}
+@media only screen and (max-width: 767.9px) {
+     .movie{
+         grid-template-columns: repeat(2, 1fr);
+     }
+ }
+ 
+ @media only screen and (max-width: 475px) {
+      .movie{
+          grid-template-columns: repeat(1, 1fr);
+      }
+  }
