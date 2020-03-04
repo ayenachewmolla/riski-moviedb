@@ -1,12 +1,15 @@
-<section class="main-page">
-    <label>Search Movie
-        <input #searchInput />
-    </label>
-    <button (click)="search(searchInput.value)">SEARCH</button>
-    <div>
+<section class="home-page">
+    <div class="search">
+        <label>Search Movie
+            <input #searchInput />
+        </label>
+        <button (click)="search(searchInput.value)">SEARCH</button>
+    </div>
+    <div class="errmsg">
         {{errmsg}}
     </div>
-    <section *ngIf="result">
+    <div *ngIf="isLoad" class="loadmsg">{{loadingmsg}}</div>
+    <section *ngIf="result" class="result">
         <div *ngFor="let movie of result.results" class="movie">
             <a routerLink="/movie/{{movie.id}}">
                 {{movie.title}}

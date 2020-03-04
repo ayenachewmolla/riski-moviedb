@@ -5,10 +5,14 @@
         text-align: center;
     }
 }
+
 .movie-container{
     display: flex;
     img{
         height: 400px;
+        width: 30%;
+    }
+    .noImage{
         width: 30%;
     }
     div{

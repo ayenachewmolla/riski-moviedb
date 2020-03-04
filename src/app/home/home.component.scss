@@ -1,0 +1,23 @@
+.home-page {
+    width: 100vw;
+}
+
+.search,
+.errmsg,
+.loadmsg {
+    text-align: center;
+}
+
+.home-page .result {
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    width                : 95%;
+    margin               : auto;
+    grid-gap             : 5px;
+
+    img {
+        width: 90%;
+        height: 300px;
+        margin: auto;
+    }
+}
