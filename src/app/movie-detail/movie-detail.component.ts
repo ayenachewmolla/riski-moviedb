@@ -14,7 +14,6 @@ export class MovieDetailComponent implements OnInit {
   
   constructor(private _http: MovieService,private route:ActivatedRoute) {
     this.route.params.subscribe(params => this.movieId = params.id)
-  
   }
   
   ngOnInit():void {
