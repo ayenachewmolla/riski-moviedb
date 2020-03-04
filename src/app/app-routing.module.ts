@@ -4,11 +4,11 @@ import { HomeComponent } from './home/home.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { HistoryComponent } from './history/history.component';
 
-
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'movie/:id', component: MovieDetailComponent },
   { path: 'history', component: HistoryComponent },
+
 ];
 
 @NgModule({

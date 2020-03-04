@@ -1,23 +1,41 @@
-.movie{
-    width: 90%;
+.movie {
+    width : 90%;
     margin: auto;
-    h2{
+
+    h2 {
         text-align: center;
     }
 }
 
-.movie-container{
+.movie-container {
     display: flex;
-    img{
+
+    img {
         height: 400px;
+        width : 30%;
+    }
+
+    .noImage {
         width: 30%;
     }
-    .noImage{
-        width: 30%;
-    }
-    div{
-        width: 60%;
+
+    div {
+        width : 60%;
         margin: auto;
     }
-    
+
+}
+
+
+@media only screen and (max-width: 475px) {
+    .movie-container {
+        flex-direction: column-reverse;
+        .detail{
+            width: 95%;
+        }
+        img {
+            width: 90%;
+            margin: auto;
+        }
+    }
 }
