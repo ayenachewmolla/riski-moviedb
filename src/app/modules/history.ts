@@ -1,4 +1,4 @@
 export interface History {
-    time: number,
+    date: string,
     title: string
 }

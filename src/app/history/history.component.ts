@@ -10,7 +10,7 @@ import { History } from '../modules/history'
 export class HistoryComponent implements OnInit {
   
   constructor(
-    private historyService = historyService
+    private historyService: HistoryService
   ) { }
 
   ngOnInit() {

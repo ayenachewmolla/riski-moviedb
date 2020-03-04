@@ -1,2 +1,10 @@
 <p>home works!</p>
-    
+<p>Search Movie</p>
+<input #searchInput />
+<button (click)="search(searchInput.value)">SEARCH</button>
+
+<section *ngIf="result">
+<div *ngFor="let movie of result.results">
+{{movie.title}}
+</div>
+</section>
