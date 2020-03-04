@@ -1,0 +1,8 @@
+.movie{
+    height: 30px;
+    width: 90%;
+}
+
+.movie:nth-child(odd){
+    background-color: lightgray;
+}
