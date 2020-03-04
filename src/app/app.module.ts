@@ -3,10 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { HistoryComponent } from './history/history.component';
+import { MovieDetailComponent } from './movie-detail/movie-detail.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavBarComponent,
+    HistoryComponent,
+    MovieDetailComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
