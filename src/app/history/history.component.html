@@ -1,5 +1,17 @@
-<div *ngIf="historyService.searchhistory.length"> 
-    <li *ngFor="let history of historyService.searchhistory" class="history">
-        <h2>{{history.title}} at: {{history.date}}</h2>
-    </li>
+<div *ngIf="historyService.searchhistory.length" class="history-comp">
+    <h2>Your Searching History</h2>
+    <table>
+        <thead>
+            <tr>
+                <th> Movie Title</th>
+                <th> Searching date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let history of historyService.searchhistory">
+                <td>{{history.title}}</td>
+                <td>{{history.date}}</td>
+            </tr>
+        </tbody>
+    </table>
 </div>

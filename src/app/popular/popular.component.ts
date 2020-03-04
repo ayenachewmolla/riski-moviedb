@@ -19,7 +19,6 @@ export class PopularComponent implements OnInit {
   
   ngOnInit():void {
     this._http.getPopular().subscribe((data => {
-      console.log(data);
       this.movies = data;
     }))
   }

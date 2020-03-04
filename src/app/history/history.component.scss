@@ -1,7 +1,30 @@
-.history {
-    list-style-type: none;
-    margin-left: 20px;
-}
-.history:nth-child(odd) {
-    background-color: lightgrey;
+// .history {
+//     width          : 80%;
+//     list-style-type: none;
+//     margin         : auto;
+// }
+
+
+
+.history-comp {
+    h2 {
+        text-align: center;
+        margin: 3vh 0;
+    }
+
+    table {
+        width : 70%;
+        margin: auto;
+
+        th,
+        tr {
+            text-align: center;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: rgb(223, 219, 219);
+
+        }
+
+    }
 }

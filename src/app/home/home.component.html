@@ -7,6 +7,7 @@
     </div>
     <div class="errmsg">
         {{errmsg}}
+        <p (click)="togglePopular()">See Popular</p>
     </div>
     <div *ngIf="isLoad" class="loadmsg">{{l<oadingmsg}}</div>
     <section *ngIf="result" class="result">
@@ -20,5 +21,8 @@
             <div *ngIf="!movie.poster_path" class="noImage">No Image for the movie</div>
         </div>
     </section>
-    <app-popular></app-popular>
+    <section *ngIf="popular">
+        <app-popular></app-popular>
+    </section>
+
 </section>
