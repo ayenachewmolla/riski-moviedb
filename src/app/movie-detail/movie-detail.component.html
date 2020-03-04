@@ -1,7 +1,12 @@
-<div *ngIf="movie" class="movie-container">
+<div *ngIf="movie" class="movie">
     <h2 class="name">{{ movie.title}}</h2>
-    <img src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}" alt="">
-    <p class="name">{{ movie.status}}</p>
-    <p class="name">{{ movie.overview}}</p>
-    <a href="{{movie.homepage}}">Home Page</a>
+    <div class="movie-container">
+        <img src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}" alt="">
+        <div class="detail">
+            <p class="name">Status: {{ movie.status}}</p>
+            <p class="name">{{ movie.overview}}</p>
+            <p *ngIf="!movie.overview">No description</p>
+            <a href="{{movie.homepage}}">Home Page</a>
+        </div>
+    </div>
 </div>
