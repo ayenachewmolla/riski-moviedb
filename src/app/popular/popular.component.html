@@ -1,1 +1,13 @@
-<p>popular works!</p>
+<p>Popular Movie</p>
+<div *ngIf="movies" class="movie">
+    <div class="movie-container" *ngFor="let movie of movies.results">
+        <p class="title">name: {{ movie.title}}</p>
+        <img *ngIf="movie.poster_path" src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}" alt="">
+        <div *ngIf="!movie.poster_path" class="noImage">No Image</div>
+        <div class="detail">
+            <p class="name">{{ movie.overview}}</p>
+            <p *ngIf="!movie.overview">No description</p>
+         <p> Rated:{{movie.vote_average}}</p>
+        </div>
+    </div>
+</div>
