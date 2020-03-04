@@ -2,7 +2,10 @@
 
 <ul *ngIf="movie">
     <li>
-        <p class="name">{{ movie.title }}</p>
-        <p class="id">{{ movie.id }}</p>
+        <p class="name">{{ movie.title}}</p>
+        <p class="name">{{ movie.status}}</p>
+        <p class="name">{{ movie.overview}}</p>
+        <img src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}" alt="">
+        <a href="{{movie.homepage}}">Back To Home Page</a>
     </li>
 </ul>
