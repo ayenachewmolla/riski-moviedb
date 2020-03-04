@@ -7,17 +7,19 @@ import { Movie } from '../modules/movie';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  result
-  errmsg = ''
-  isLoad = false
-  loadingmsg = 'Loading...'
+  result;
+  errmsg = '';
+  isLoad = false;
+  loadingmsg = 'Loading...';
   constructor(private _http: MovieService) { }
 
   ngOnInit() {
+    
   }
+
   search(name: string): void {
-    this.isLoad = true
-    this.errmsg = ''
+    this.isLoad = true;
+    this.errmsg = '';
     this._http.getSearch(name).subscribe(data => {
       this.result = data;
       if (this.result.results.length === 0) {

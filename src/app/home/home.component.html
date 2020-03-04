@@ -15,7 +15,8 @@
                 {{movie.title}}
             </a>
             <p>{{movie.release_date}}</p>
-            <p>{{movie.overview}}</p>
-            <img src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}" alt="">
+            <p class="overview">{{movie.overview}}</p>
+            <img *ngIf="movie.poster_path" src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}" alt="">
+            <div *ngIf="!movie.poster_path" class="noImage">No Image for the movie</div>
         </div>
     </section>

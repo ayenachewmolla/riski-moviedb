@@ -7,7 +7,7 @@
             <p class="name">Status: {{ movie.status}}</p>
             <p class="name">{{ movie.overview}}</p>
             <p *ngIf="!movie.overview">No description</p>
-            <a href="{{movie.homepage}}">Home Page</a>
+            <a href="{{movie.homepage}}" *ngIf="movie.homepage">Home Page</a>
         </div>
     </div>
 </div>

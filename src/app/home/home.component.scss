@@ -16,8 +16,21 @@
     grid-gap             : 5px;
 
     img {
-        width: 90%;
+        width : 90%;
         height: 300px;
         margin: auto;
+    }
+}
+
+.movie {
+    .overview {
+        height          : 100px;
+        overflow        : hidden;
+        text-overflow   : ellipsis;
+    }
+
+    .noImage {
+        text-align: center;
+        margin-top: 100px;
     }
 }

@@ -9,7 +9,8 @@ import { HistoryComponent } from './history/history.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './material/material.module'
+import { MaterialModule } from './material/material.module';
+import { PopularComponent } from './popular/popular.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,6 +18,7 @@ import { MaterialModule } from './material/material.module'
     HistoryComponent,
     MovieDetailComponent,
     HomeComponent,
+    PopularComponent,
     
   ],
   imports: [
