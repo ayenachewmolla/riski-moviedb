@@ -1,1 +1,8 @@
 <p>movie-detail works!</p>
+
+<ul *ngIf="movie">
+    <li>
+        <p class="name">{{ movie.title }}</p>
+        <p class="id">{{ movie.id }}</p>
+    </li>
+</ul>
