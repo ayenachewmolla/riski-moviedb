@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9347576b-3e88-4d77-8843-8cb38bdda2e0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+  </component>
+  <component name="ProjectId" id="1YUAoFDNxIOWNRAxfDk72yOKHYz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/app" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsDialog.application.dockerMachine" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="634" y="305" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582988055617">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="634" y="305" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1792.23.1792.1097/0.23.1920.1057@0.23.1920.1057" timestamp="1582988055617" />
+    <state x="579" y="338" key="git4idea.merge.GitPullDialog" timestamp="1582992682827">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="579" y="338" key="git4idea.merge.GitPullDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1582992682827" />
+    <state x="561" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1582988106601">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="561" y="258" width="670" height="676" key="search.everywhere.popup/-1792.23.1792.1097/0.23.1920.1057@0.23.1920.1057" timestamp="1582988106601" />
+  </component>
+</project>
