@@ -5,17 +5,23 @@ import { Observable, of } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
+
 export class HistoryService {
-  history: History[] = []
+  searchhistory: History[] = []
+
   constructor() { }
 
   getHistory(): void {
-    this.history = JSON.parse(localStorage.getItem('history'));
+    let searchedHistory = JSON.parse(localStorage.getItem('searchhistory'));
+
+    if (searchedHistory) {
+      this.searchhistory = searchedHistory;
+    }
   }
 
   addHistory(history: History) {
-    this.history.push(history);
-    localStorage.setItem('history', JSON.stringify(this.history));
+    this.searchhistory.push(history);
+    localStorage.setItem('searchhistory', JSON.stringify(this.searchhistory));
   }
 
 }

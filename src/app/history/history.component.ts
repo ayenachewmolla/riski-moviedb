@@ -8,13 +8,13 @@ import { History } from '../modules/history'
   styleUrls: ['./history.component.scss']
 })
 export class HistoryComponent implements OnInit {
-  
+
   constructor(
     private historyService: HistoryService
   ) { }
 
   ngOnInit() {
-    
+    this.historyService.getHistory();
   }
 
 }
