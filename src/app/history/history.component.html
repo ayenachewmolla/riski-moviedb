@@ -1,5 +1,5 @@
 <div *ngIf="historyService.searchhistory.length">
     <li *ngFor="let history of historyService.searchhistory">
-        <h2>{{history.title}}</h2>
+        <h2>{{history.title}} at: {{history.date}}</h2> 
     </li>
 </div>

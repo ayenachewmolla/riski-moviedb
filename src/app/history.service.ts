@@ -8,12 +8,10 @@ import { Observable, of } from 'rxjs';
 
 export class HistoryService {
   searchhistory: History[] = []
-
   constructor() { }
 
   getHistory(): void {
     let searchedHistory = JSON.parse(localStorage.getItem('searchhistory'));
-
     if (searchedHistory) {
       this.searchhistory = searchedHistory;
     }

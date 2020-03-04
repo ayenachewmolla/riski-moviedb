@@ -4,7 +4,9 @@
 <button (click)="search(searchInput.value)">SEARCH</button>
 
 <section *ngIf="result">
-<div *ngFor="let movie of result.results">
-{{movie.title}}
-</div>
+    <div *ngFor="let movie of result.results">
+        <a routerLink="/movie/{{movie.id}}">
+            {{movie.title}}
+        </a>
+    </div>
 </section>

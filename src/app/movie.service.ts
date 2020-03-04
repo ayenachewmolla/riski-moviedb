@@ -22,9 +22,8 @@ export class MovieService {
   }
 
   getSearch(searchQuery: string): Observable<Movie[]> {
-    this.historyService.addHistory({title: searchQuery, date: Date.toString()})
-    return this.http.get<Movie[]>(`${this.url}=${searchQuery}`)
-
+    this.historyService.addHistory({title: searchQuery, date: new Date().toLocaleString()})
+    return this.http.get<Movie[]>(`${this.url}=${searchQuery}`);
   }
 
 
