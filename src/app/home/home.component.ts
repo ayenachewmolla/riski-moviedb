@@ -9,17 +9,21 @@ import { Movie } from '../modules/movie';
 export class HomeComponent implements OnInit {
   result
   errmsg = ''
+  isLoad = false
+  loadingmsg = 'Loading...'
   constructor(private _http: MovieService) { }
 
   ngOnInit() {
   }
   search(name: string): void {
+    this.isLoad = true
     this.errmsg = ''
     this._http.getSearch(name).subscribe(data => {
       this.result = data;
       if (this.result.results.length === 0) {
         this.errmsg = "Not Found";
-      } 
+      }
     })
+    this.isLoad = false
   }
 }
