@@ -1,0 +1,7 @@
+.history {
+    list-style-type: none;
+    margin-left: 20px;
+}
+.history:nth-child(odd) {
+    background-color: lightgrey;
+}

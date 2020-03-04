@@ -1,15 +1,18 @@
-<p>home works!</p>
-<p>Search Movie</p>
-<input #searchInput />
-<button (click)="search(searchInput.value)">SEARCH</button>
-
-<section *ngIf="result">
-    <div *ngFor="let movie of result.results" class="movie">
-        <a routerLink="/movie/{{movie.id}}">
-            {{movie.title}}
-        </a>
-        <p>{{movie.release_date}}</p>
-        <p>{{movie.overview}}</p>
-        <img src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}" alt="">
+<section class="main-page">
+    <label>Search Movie
+        <input #searchInput />
+    </label>
+    <button (click)="search(searchInput.value)">SEARCH</button>
+    <div>
+        {{errmsg}}
     </div>
-</section>  
+    <section *ngIf="result">
+        <div *ngFor="let movie of result.results" class="movie">
+            <a routerLink="/movie/{{movie.id}}">
+                {{movie.title}}
+            </a>
+            <p>{{movie.release_date}}</p>
+            <p>{{movie.overview}}</p>
+            <img src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}" alt="">
+        </div>
+    </section>

@@ -1,0 +1,19 @@
+.movie{
+    width: 90%;
+    margin: auto;
+    h2{
+        text-align: center;
+    }
+}
+.movie-container{
+    display: flex;
+    img{
+        height: 400px;
+        width: 30%;
+    }
+    div{
+        width: 60%;
+        margin: auto;
+    }
+    
+}
