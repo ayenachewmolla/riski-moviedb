@@ -8,7 +8,7 @@
     <div class="errmsg">
         {{errmsg}}
     </div>
-    <div *ngIf="isLoad" class="loadmsg">{{loadingmsg}}</div>
+    <div *ngIf="isLoad" class="loadmsg">{{l<oadingmsg}}</div>
     <section *ngIf="result" class="result">
         <div *ngFor="let movie of result.results" class="movie">
             <a routerLink="/movie/{{movie.id}}">
@@ -20,3 +20,5 @@
             <div *ngIf="!movie.poster_path" class="noImage">No Image for the movie</div>
         </div>
     </section>
+    <app-popular></app-popular>
+</section>

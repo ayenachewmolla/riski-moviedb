@@ -26,4 +26,8 @@ export class MovieService {
     return this.http.get<Movie[]>(`${this.url}=${searchQuery}`);
   }
 
+  getPopular(): Observable<Movie> {
+    return this.http.get<Movie>(`https://api.themoviedb.org/3/trending/movie/week?api_key=${this.apiKey}`)
+  }
+  
 }

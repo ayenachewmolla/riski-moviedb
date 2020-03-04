@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MovieService } from '../movie.service';
+import { ActivatedRoute } from '@angular/router';
+import { Movie } from '../modules/movie';
 
 @Component({
   selector: 'app-popular',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PopularComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+  movieId: number;
+  movies;
+  
+  constructor(private _http: MovieService,private route:ActivatedRoute) {
+    this.route.params.subscribe(params => this.movieId = params.id)
   }
-
+  
+  ngOnInit():void {
+    this._http.getPopular().subscribe((data => {
+      console.log(data);
+      this.movies = data;
+    }))
+  }
 }
